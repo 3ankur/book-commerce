@@ -17,7 +17,7 @@ justify-content: space-between;
 const NavBar = ()=>{
     return(
         <Nav>
-            <div className="logo">
+            <div role="banner" className="logo">
                 eCommerce App
             </div>
             <Burger/>

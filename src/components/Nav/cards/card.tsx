@@ -17,7 +17,7 @@ img{
     padding:1rem;
 }
 .btn-buynow{
-    background-color: #4c94af;
+    background-color: #008B8B;
     border: 1px solid #000;
     color: white;
     padding: 15px 32px;
@@ -43,7 +43,7 @@ const Card = ({ bookData }: bookProps) => {
                     <h4>{bookData.title}</h4>
                     <p>{bookData.author}</p>
                     <div>{bookData.price}</div>
-                    <div><button className="btn-buynow">Button</button></div>
+                    <div><button className="btn-buynow">Buy Now</button></div>
                 </div>
 
             </StyledCard>

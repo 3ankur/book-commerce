@@ -4,7 +4,7 @@ import CardContainer from "../components/Nav/cards/card-container";
 function HomePage(){
 
     return(
-        <div>
+        <div role="main">
 
             <CardContainer/>
         </div>

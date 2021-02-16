@@ -31,9 +31,9 @@ interface RightNavProps{
 const RightNav = ({open}: RightNavProps) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>MyOrder</li>
-      <li>Cart</li>
+      <li role="tab">Home</li>
+      <li role="tab">MyOrder</li>
+      <li role="tab">Cart</li>
     </Ul>
   )
 }
