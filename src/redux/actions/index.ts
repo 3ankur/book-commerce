@@ -1,0 +1,3 @@
+export const  LOAD_BOOK_LIST = 'LOAD_BOOK_LIST';
+export const LOAD_BOOK_SUCCESS =  'LOAD_BOOK_SUCCESS';
+export const LOAD_BOOK_ERROR =  'LOAD_BOOK_ERROR';

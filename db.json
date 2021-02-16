@@ -1,6 +1,11 @@
 {
     "books": [
-      { "id": 1, "title": "The Power Of Positive Thinking", "author": "typicode" }
+      { "id": 1,"price": "$ 10", "title":  "The Power Of Positive Thinking", "author": "Nipolean Hills" ,"coverImage":"https://m.media-amazon.com/images/I/51d2e+67u1L.jpg" },
+      { "id": 2,"price": "$ 13", "title":  "To Kill A Mockingbird by Harper Lee", "author": "Harper Lee" ,"coverImage":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457540489-to-kill-a-mockingbird.jpg?resize=980:*" },
+      { "id": 3,"price": "$ 25", "title":  "Great Expectations by Charles Dickens", "author": "Charles Dickens" ,"coverImage":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457528679-great-expectations.jpg?resize=980:*" },
+      { "id": 4,"price": "$ 31", "title":  "Lord of the Flies by William Golding", "author": "Charles Dickens" ,"coverImage":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457528919-lord-of-the-flies.jpg?resize=980:*" },
+      { "id": 5,"price": "$ 11", "title":  "The Scarlet Letter by Nathaniel Hawthorne", "author": "Nathaniel Hawthorne" ,"coverImage":"https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457529324-the-scarlet-letter.jpg?resize=980:*" }
+
     ],
     "comments": [
       { "id": 1, "body": "some comment", "postId": 1 }
