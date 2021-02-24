@@ -11,6 +11,13 @@ export const REMOVE_BOOK_FROM_CART_SUCCESS = 'REMOVE_BOOK_FROM_CART_SUCCESS';
 export const REMOVE_BOOK_FROM_CART_FAILED = 'REMOVE_BOOK_FROM_CART_FAILED';
 export const LOAD_CART_ITEMS = 'LOAD_CART_ITEMS';
 export const LOAD_CART_ITEMS_SUCCESS = 'LOAD_CART_ITEMS_SUCCESS'; 
+export const UPDATE_SHIPPING_ADDRESS = 'UPDATE_SHIPPING_ADDRESS';
+export const UPDATE_SHIPPING_ADDRESS_SUCCESS = 'UPDATE_SHIPPING_ADDRESS_SUCCESS';
+export const GET_SHIPPING_ADDRESS= 'GET_SHIPPING_ADDRESS'
+export const GET_SHIPPING_ADDRESS_SUCCESS= 'GET_SHIPPING_ADDRESS_SUCCESS'
+export const UPDATE_PRODUCT_QUANTITY = 'UPDATE_PRODUCT_QUANTITY';
+export const UPDATE_PRODUCT_QUANTITY_SUCCESS = 'UPDATE_PRODUCT_QUANTITY_SUCCESS';
+export const API_FAILED = 'API_FAILED';
 
 export function addItemToCart(book: BookType) {
     return {
@@ -24,4 +31,18 @@ export function removeItemFromCart(book: BookType) {
     type: REMOVE_BOOK_FROM_CART,
     payload: book
 }
+}
+
+export function updateAddress(address:string){
+    return{
+        type: UPDATE_SHIPPING_ADDRESS,
+        payload: address
+    }
+}
+
+export function updateProductQuantity(book: BookType){
+    return{
+        type: UPDATE_PRODUCT_QUANTITY,
+        payload: book
+    }
 }

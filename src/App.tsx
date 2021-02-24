@@ -6,7 +6,7 @@ import NavBar from './components/Nav/navbar';
 import Orders from './components/order/order';
 import BookDetails from './pages/BookDetails';
 import HomePage from './pages/HomePage';
-import { LOAD_BOOK_LIST, LOAD_CART_ITEMS } from './redux/actions';
+import { GET_SHIPPING_ADDRESS, LOAD_BOOK_LIST, LOAD_CART_ITEMS } from './redux/actions';
 
 // todo
 // configure husky before commiting to git
@@ -16,6 +16,7 @@ function App() {
   useEffect(()=>{
     dispatch({type:LOAD_CART_ITEMS})
     dispatch({type:LOAD_BOOK_LIST})
+    dispatch({type:GET_SHIPPING_ADDRESS})
   },[dispatch])
 
   return (

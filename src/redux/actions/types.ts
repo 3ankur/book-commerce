@@ -7,12 +7,13 @@ export type BookType={
     coverImage:string,
     author: string
     ISBN: string,
-    pages: string
+    pages: string,
+    quantity?:number
 }
 
 export type ActionPayload = {
     type: string,
-    payload: unknown 
+    payload: any 
 }
 
 export type BookCartAction ={

@@ -66,7 +66,7 @@ const Card = ({ bookData }: bookProps) => {
                     <div>{bookData.price}</div>
                     <div>
                         {
-                            bookDetailById[(bookData.id)] ? <StyledBookButton onClick={()=>dispatch(removeItemFromCart(bookData)) } >Remove</StyledBookButton> : <StyledBookButton onClick={() =>dispatch(addItemToCart(bookData))  }>Buy Now</StyledBookButton>
+                            bookDetailById[(bookData.id)] ? <StyledBookButton onClick={()=>dispatch(removeItemFromCart(bookData)) } >Remove</StyledBookButton> : <StyledBookButton onClick={() =>dispatch(addItemToCart({...bookData,quantity:1}))  }>Buy Now</StyledBookButton>
                         }
                     </div>
                 </div>
