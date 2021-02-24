@@ -53,16 +53,6 @@
   ],
   "cart": [
     {
-      "id": 3,
-      "price": "$ 25",
-      "pages": 230,
-      "ISBN": "5784871174292",
-      "description": "Published in 1954, Lord of the Flies was Goldings first novel. The idea came about after Golding read what he deemed to be an unrealistic depiction of stranded children in youth novels like The Coral Island: a Tale of the Pacific Ocean (1857) by R. M. Ballantyne, and asked his wife, Ann, if it would be a good idea if I wrote a book about children on an island, children who behave in the way children really would behave [3] As a result, the novel contains various references to The Coral Island, such as the rescuing naval officer s description of the boys initial attempts at civilised cooperation as a jolly good show, like the Coral Island.[4] Goldings three central characters (Ralph, Piggy, and Jack) have also been interpreted as caricatures of Ballantynes Coral Island protagonists.",
-      "title": "Great Expectations by Charles Dickens",
-      "author": "Charles Dickens",
-      "coverImage": "https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457528679-great-expectations.jpg?resize=980:*"
-    },
-    {
       "id": 5,
       "price": "$ 11",
       "pages": 230,
@@ -70,7 +60,19 @@
       "description": "Published in 1954, Lord of the Flies was Goldings first novel. The idea came about after Golding read what he deemed to be an unrealistic depiction of stranded children in youth novels like The Coral Island: a Tale of the Pacific Ocean (1857) by R. M. Ballantyne, and asked his wife, Ann, if it would be a good idea if I wrote a book about children on an island, children who behave in the way children really would behave [3] As a result, the novel contains various references to The Coral Island, such as the rescuing naval officer s description of the boys initial attempts at civilised cooperation as a jolly good show, like the Coral Island.[4] Goldings three central characters (Ralph, Piggy, and Jack) have also been interpreted as caricatures of Ballantynes Coral Island protagonists.",
       "title": "The Scarlet Letter by Nathaniel Hawthorne",
       "author": "Nathaniel Hawthorne",
-      "coverImage": "https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457529324-the-scarlet-letter.jpg?resize=980:*"
+      "coverImage": "https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457529324-the-scarlet-letter.jpg?resize=980:*",
+      "quantity": 11
+    },
+    {
+      "id": 3,
+      "price": "$ 25",
+      "pages": 230,
+      "ISBN": "5784871174292",
+      "description": "Published in 1954, Lord of the Flies was Goldings first novel. The idea came about after Golding read what he deemed to be an unrealistic depiction of stranded children in youth novels like The Coral Island: a Tale of the Pacific Ocean (1857) by R. M. Ballantyne, and asked his wife, Ann, if it would be a good idea if I wrote a book about children on an island, children who behave in the way children really would behave [3] As a result, the novel contains various references to The Coral Island, such as the rescuing naval officer s description of the boys initial attempts at civilised cooperation as a jolly good show, like the Coral Island.[4] Goldings three central characters (Ralph, Piggy, and Jack) have also been interpreted as caricatures of Ballantynes Coral Island protagonists.",
+      "title": "Great Expectations by Charles Dickens",
+      "author": "Charles Dickens",
+      "coverImage": "https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457528679-great-expectations.jpg?resize=980:*",
+      "quantity": 12
     },
     {
       "id": 1,
@@ -80,7 +82,8 @@
       "description": "Published in 1954, Lord of the Flies was Goldings first novel. The idea came about after Golding read what he deemed to be an unrealistic depiction of stranded children in youth novels like The Coral Island: a Tale of the Pacific Ocean (1857) by R. M. Ballantyne, and asked his wife, Ann, if it would be a good idea if I wrote a book about children on an island, children who behave in the way children really would behave [3] As a result, the novel contains various references to The Coral Island, such as the rescuing naval officer s description of the boys initial attempts at civilised cooperation as a jolly good show, like the Coral Island.[4] Goldings three central characters (Ralph, Piggy, and Jack) have also been interpreted as caricatures of Ballantynes Coral Island protagonists.",
       "title": "The Power Of Positive Thinking",
       "author": "Nipolean Hills",
-      "coverImage": "https://m.media-amazon.com/images/I/51d2e+67u1L.jpg"
+      "coverImage": "https://m.media-amazon.com/images/I/51d2e+67u1L.jpg",
+      "quantity": 11
     },
     {
       "id": 2,
@@ -90,7 +93,19 @@
       "description": "Published in 1954, Lord of the Flies was Goldings first novel. The idea came about after Golding read what he deemed to be an unrealistic depiction of stranded children in youth novels like The Coral Island: a Tale of the Pacific Ocean (1857) by R. M. Ballantyne, and asked his wife, Ann, if it would be a good idea if I wrote a book about children on an island, children who behave in the way children really would behave [3] As a result, the novel contains various references to The Coral Island, such as the rescuing naval officer s description of the boys initial attempts at civilised cooperation as a jolly good show, like the Coral Island.[4] Goldings three central characters (Ralph, Piggy, and Jack) have also been interpreted as caricatures of Ballantynes Coral Island protagonists.",
       "title": "To Kill A Mockingbird by Harper Lee",
       "author": "Harper Lee",
-      "coverImage": "https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457540489-to-kill-a-mockingbird.jpg?resize=980:*"
+      "coverImage": "https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457540489-to-kill-a-mockingbird.jpg?resize=980:*",
+      "quantity": 10
+    },
+    {
+      "id": 4,
+      "price": "$ 31",
+      "pages": 230,
+      "ISBN": "3744580876292",
+      "description": "Published in 1954, Lord of the Flies was Goldings first novel. The idea came about after Golding read what he deemed to be an unrealistic depiction of stranded children in youth novels like The Coral Island: a Tale of the Pacific Ocean (1857) by R. M. Ballantyne, and asked his wife, Ann, if it would be a good idea if I wrote a book about children on an island, children who behave in the way children really would behave [3] As a result, the novel contains various references to The Coral Island, such as the rescuing naval officer s description of the boys initial attempts at civilised cooperation as a jolly good show, like the Coral Island.[4] Goldings three central characters (Ralph, Piggy, and Jack) have also been interpreted as caricatures of Ballantynes Coral Island protagonists.",
+      "title": "Lord of the Flies by William Golding",
+      "author": "Charles Dickens",
+      "coverImage": "https://hips.hearstapps.com/harpersbazaaruk.cdnds.net/16/10/1457528919-lord-of-the-flies.jpg?resize=980:*",
+      "quantity": 12
     }
   ],
   "order": [],
@@ -101,7 +116,7 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "address": {
+    "address": "House No 41 Denbigh Road TW3 4AH Hounslow East West London United Kingdom"
   }
 }

@@ -1,8 +1,10 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
+import { updateAddress, updateProductQuantity } from "../../redux/actions";
 import { AppState } from "../../redux/reducers/rootReducer";
 import { StyledBookButton } from "../cards/card";
+import Payment from "./payment";
 
 const StyledCart = styled.div`
 display: flex;
@@ -90,15 +92,23 @@ color: white
 
 function Cart() {
 
+   
+    const {shippingAddress} = useSelector((state:AppState)=>state.address);
+    const [address,setAddress] = useState('');
+    const dispatch = useDispatch();
     const { cart, bookDetailById } = useSelector((state: AppState) => state.cartItems)
+
+    useEffect(()=>{
+        setAddress(shippingAddress);
+    },[shippingAddress])
     return (
         <StyledCart>
             <div className="cart-left">
                 <h3>Shipping Address</h3>
                 <div>
-                    <textarea rows={15} cols={60} />
+                    <textarea onChange={(e)=>setAddress(e.target.value)} value={address} rows={15} cols={60} />
                     <div style={{ display: 'flex' }}>
-                        <button>Save Address</button>
+                        <button onClick={()=>dispatch(updateAddress(address))} >Save Address</button>
                         <button>Edit Address</button>
                     </div>
                 </div>
@@ -109,20 +119,25 @@ function Cart() {
                     <ul className="cart-item-list">
                         {
                             cart.map((id) => {
-                                const { title } = bookDetailById[id];
+                                const { title,quantity } = bookDetailById[id];
                                 return (
                                     <li key={id}>
                                         <span>{title}</span>
                                         <StyledCartButton>
-                                        <CircleBtn>-</CircleBtn>1 <CircleBtn>+</CircleBtn>
+                                        <CircleBtn onClick={()=>dispatch(updateProductQuantity({
+                                            ...bookDetailById[id],quantity:quantity-1
+                                        }))} disabled={quantity===1} >-</CircleBtn>{quantity}<CircleBtn onClick={()=>dispatch(updateProductQuantity({
+                                            ...bookDetailById[id],quantity:quantity+1
+                                        }))} >+</CircleBtn>
                                         </StyledCartButton>
                                     </li>
                                 )
                             })
                         }
                     </ul>
-
+                      
                 </div>
+                <Payment/>
             </div>
         </StyledCart>
     )

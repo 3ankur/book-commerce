@@ -1,4 +1,4 @@
-import { ADD_BOOK_SUCCESS, LOAD_CART_ITEMS_SUCCESS, REMOVE_BOOK_FROM_CART, REMOVE_BOOK_FROM_CART_SUCCESS } from "../actions";
+import { ADD_BOOK_SUCCESS, LOAD_CART_ITEMS_SUCCESS, REMOVE_BOOK_FROM_CART, REMOVE_BOOK_FROM_CART_SUCCESS, UPDATE_PRODUCT_QUANTITY_SUCCESS } from "../actions";
 import { BookCartAction, BookType } from "../actions/types"
 
 type CartTypes = {
@@ -18,9 +18,9 @@ const cartReducer = (state = initialState, action: BookCartAction) => {
         case LOAD_CART_ITEMS_SUCCESS:{
             const { payload } = action;
             const { cart, bookDetailById } = state;
-
+            console.log("==>",payload)
              payload.forEach((item:BookType)=>{
-                 if(cart.indexOf(item.id)===1){
+                 if(cart.indexOf(item.id)===-1){
                     cart.push(item.id);
                 bookDetailById[item.id] = item;
                  }
@@ -39,7 +39,7 @@ const cartReducer = (state = initialState, action: BookCartAction) => {
             const { payload } = action;
             const { cart, bookDetailById } = state;
             cart.push(payload.id);
-            bookDetailById[payload.id] = payload;
+            bookDetailById[payload.id] = {...payload,quantity:1};
 
             return {
                 ...state,
@@ -58,6 +58,20 @@ const cartReducer = (state = initialState, action: BookCartAction) => {
                 bookDetailById
             }
         }
+
+        case UPDATE_PRODUCT_QUANTITY_SUCCESS:{
+            const {payload} = action;
+            const {bookDetailById} = state;
+            bookDetailById[payload.id] = payload;
+
+            return{
+                ...state,
+                bookDetailById
+            }
+        }
+
+
+        
             
 
         default:
