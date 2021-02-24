@@ -1,11 +1,10 @@
 import React from "react";
-import CardContainer from "../components/Nav/cards/card-container";
+import CardContainer from "../components/cards/card-container";
 
 function HomePage(){
 
     return(
         <div role="main">
-
             <CardContainer/>
         </div>
     )

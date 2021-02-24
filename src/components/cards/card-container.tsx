@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-import { LOAD_BOOK_LIST } from "../../../redux/actions";
-import { BookType } from "../../../redux/reducers/booksReducer";
-import { AppState } from "../../../redux/reducers/rootReducer";
+import { BookType } from "../../redux/actions/types";
+// import { AppState } from "../../../redux/reducers/rootReducer";
 import Card from "./card";
 
 const StyledContainer = styled.div`
@@ -23,31 +22,20 @@ padding: 1rem;
 `;
 
 const CardContainer = () =>{
-  const dispatch = useDispatch();
+
   const {books} = useSelector((state:any)=>state.book)
 
-  useEffect(()=>{
-    dispatch({type:LOAD_BOOK_LIST})
-  },[])
     return(
         <>
         <StyledContainer>
           {
-            console.log(books)
-          }
-          {
           books.map((bookData : BookType)=>{
             return(
-              <Card bookData={bookData} />
+              <Card key={bookData.id}  bookData={bookData} />
             );
            })
 
           }
-          
-            {/* <Card />
-            <Card />
-            <Card />
-            <Card /> */}
         </StyledContainer>
         </>
     )

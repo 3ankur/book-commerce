@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled, { StyledComponentBase } from 'styled-components';
 
 const Ul  : StyledComponentBase<"ul", any, any, never>  = styled.ul<{open:boolean}>`
@@ -31,9 +32,9 @@ interface RightNavProps{
 const RightNav = ({open}: RightNavProps) => {
   return (
     <Ul open={open}>
-      <li role="tab">Home</li>
-      <li role="tab">MyOrder</li>
-      <li role="tab">Cart</li>
+      <li role="tab">  <Link to="/">Home</Link>  </li>
+      <li role="tab"><Link to="/orders">MyOrder</Link>  </li>
+      <li role="tab"> <Link to="/cart">Cart</Link></li>
     </Ul>
   )
 }

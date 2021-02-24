@@ -1,6 +1,9 @@
 import React from "react";
+import BookDetailsContainer from "../components/book-details/bookDetailsContainer";
 
 function BookDetails(){
-    return(<div>THis is the details page</div>)
+    return(<div>
+       <BookDetailsContainer />
+        </div>)
 }
 export default BookDetails;

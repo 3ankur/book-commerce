@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useParams } from "react-router-dom";
 import styled from 'styled-components';
 import Burger from "./burger";
 
@@ -10,7 +11,8 @@ padding: 0 20px;
 display: flex;
 justify-content: space-between;
 .logo {
-  padding: 15px 0;
+  padding: 15px 5px;
+  border: 1px dotted #f1f1f1;
 }
 `;
 
@@ -18,7 +20,7 @@ const NavBar = ()=>{
     return(
         <Nav>
             <div role="banner" className="logo">
-                eCommerce App
+               <Link to="/">eCommerce App</Link> 
             </div>
             <Burger/>
         </Nav>   

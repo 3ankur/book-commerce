@@ -1,4 +1,5 @@
-import { LOAD_BOOK_ERROR, LOAD_BOOK_SUCCESS } from "../actions";
+import {  LOAD_BOOK_ERROR, LOAD_BOOK_SUCCESS } from "../actions";
+import { BookType } from "../actions/types";
 
 export  type BookState={
     books: Array<BookType>,//Array<BookType>
@@ -10,15 +11,6 @@ const initialState : BookState = {
     error: null
 };
 
-export type BookType={
-    id: Number,
-    title: string,
-    description: string,
-    price: Number,
-    coverImage:string,
-    author: string
-
-}
 
 type ActionType ={
     readonly type: string,
