@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { AppState } from "../../redux/reducers/rootReducer";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 const StyledTable = styled.table`
 
@@ -50,7 +51,7 @@ function calculateTotal(cart: Array<any>, itemDetails: any) {
 }
 
 function Payment() {
-
+const  history = useHistory();
     const { cart, bookDetailById } = useSelector((state: AppState) => state.cartItems);
     const totalPrice = calculateTotal(cart, bookDetailById);
     return (
@@ -79,7 +80,7 @@ function Payment() {
                 </tbody>
             </StyledTable>
             <PaymentButton>Checkout</PaymentButton>
-            <PaymentButton>Cancel</PaymentButton>
+            <PaymentButton onClick={()=>history.push('/')}>Cancel</PaymentButton>
         </div>
     );
 }
